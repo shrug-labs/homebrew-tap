@@ -6,13 +6,13 @@ class Aipack < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/shrug-labs/aipack/releases/download/v#{version}/aipack-darwin-arm64"
-    sha256 "d457f4db219db50b56a3b60429a46ef79c09cd98ac8561a5bddfe64675f53af5"
+    sha256 "72d475c4b840014fece4831a2a17dfee5d1b94a6ec46d2a79da9c805904f3c2e"
   elsif OS.mac?
     url "https://github.com/shrug-labs/aipack/releases/download/v#{version}/aipack-darwin-amd64"
-    sha256 "cf23cf102e11c9922dc0bc87ded3990d649188eea1c3d48bbcbbdf3e893889a7"
+    sha256 "d771cbdd61bb251b7b5a49ae02cd2346251fe02a12224ba43c74268a1465e673"
   else
     url "https://github.com/shrug-labs/aipack/releases/download/v#{version}/aipack-linux-amd64"
-    sha256 "4932ca9baa3454566e1b9888c2b962b616b914654e84f7dc557cae61aa0e106b"
+    sha256 "455ff9db8b41727890d1d6c182bea145d2132be6524050942ab1ac8495c1ad37"
   end
 
   def install
