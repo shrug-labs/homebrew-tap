@@ -1,18 +1,18 @@
 class Aipack < Formula
   desc "Portable AI agent configuration pack manager"
   homepage "https://github.com/shrug-labs/aipack"
-  version "0.20.1"
+  version "0.20.2"
   license "UPL-1.0"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/shrug-labs/aipack/releases/download/v#{version}/aipack-darwin-arm64"
-    sha256 "8685aa0ba6910a4db1375c38779ba0f19d371f4fe0fe76581d5f649514b1bb59"
+    sha256 "cf9ed6be4a6c894bb4f5c74d072ab67e315c323850c835618eee93f85d97bff9"
   elsif OS.mac?
     url "https://github.com/shrug-labs/aipack/releases/download/v#{version}/aipack-darwin-amd64"
-    sha256 "3745225e9a433fe62858a3ab1f38219b485fea8afa0a691310a485ea28d9eb28"
+    sha256 "e320fdb1e9aafbdd37498241b74d9b90334cc4adb566716b0a14c14188c41d7d"
   else
     url "https://github.com/shrug-labs/aipack/releases/download/v#{version}/aipack-linux-amd64"
-    sha256 "e9a1646a77346d3d3e23d04358e99994057e73625f6221e45dd3a5ead3555629"
+    sha256 "cdcc0bed3b3cad7888b06892a78a8c8f6ba8312f1b07f2f40160f4fabd02ed62"
   end
 
   def install
